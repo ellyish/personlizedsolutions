@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Solo Creative Studio</title>
+		<link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<style>
+			* {
+				margin:0;
+				padding: 0;
+			}
+			body {
+				height: 100%;
+			}
+			.container{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				overflow: hidden;
+				flex-direction: column;
+				/*margin:10px;*/
+				/*border:10px solid;*/
+			}
+			.logo {
+				width: 200px;
+				transition: 10s all;
+				filter:hue-rotate(400deg);
+
+			}
+			.logoSate {
+				filter:hue-rotate(-600deg) !important;
+			}
+			.why {
+				padding-top: 30px;
+				font-family: 'Overpass Mono';
+				color: #969696;
+				line-height: 15px;
+				text-align: center;
+/*				display: flex;
+				justify-content: center;
+				align-items: center;
+*/			}
+			.social {
+				width: 24px;
+				padding: 20px 5px 5px 5px;
+
+
+			}
+
+			.social:hover {
+				transition: 0.4s all;
+			}
+
+
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div>
+				<img class="logo" src="img/logo.png" alt="">
+			</div>
+			<div class="why">Personalized Solutions</div>
+			<div><img class="social" src="img/facebook.png" alt=""><img class="social" src="img/behance.png" alt=""></div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		setInterval(function(){ 
+			$('.logo').toggleClass('logoSate')
+		}, 1000);
+	</script>
+</html>
